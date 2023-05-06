@@ -1,0 +1,25 @@
+@import './base.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&display=swap');
+
+a,
+.blue{
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(4, 122, 219);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: hsla(224, 94%, 41%, 0.2);
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.view {
+  margin-top: 6.5rem;
+}
