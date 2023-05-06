@@ -23,3 +23,16 @@ li {
 .view {
   margin-top: 6.5rem;
 }
+/*────────────────── 
+    scroll
+──────────────────*/
+
+/* hide horizontal scrollbar */
+
+
+::-webkit-Scrollbar {
+  width: 5px;
+  background: rgb(255, 255, 255);
+  scroll-behavior: smooth;
+  display: none;
+}

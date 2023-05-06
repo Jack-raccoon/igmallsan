@@ -5,12 +5,7 @@ import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// AOS init
-window.onload = () => {
-  AOS.init({
-    duration: 1200,
-  });
-};
+
 
 </script>
 
@@ -23,7 +18,7 @@ window.onload = () => {
         <h1 class="animate__animated animate__lightSpeedInLeft">¡Nosotros te ayudamos! </h1>
         <h3 class="animate__animated animate__rotateInUpLeft">Llámanos y resolveremos tu problema.</h3>
       </div>
-      <div class="hero-img animate__animated">
+      <div class="hero-img animate__animated" data-aos="fade-down">
         <img src="./../assets/Pipeline-maintenance-amico.png" alt="Bombas de agua">
         <a class="link" href="http://www.freepik.com/author/stories">Designed by storyset / Freepik</a>
       </div>
@@ -41,7 +36,9 @@ window.onload = () => {
         <p>Trabajamos con las mejores marcas del mercado, garantizando así la calidad de nuestros productos.</p>
       </div>
     </div>
-    <divider />
+      <div class="divider">
+        <divider/>
+      </div>
 
     <div class="services">
       <h2>Nuestros servicios</h2>
@@ -372,6 +369,141 @@ form button {
   font-weight: 800;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+/*────────────────── 
+    media queries
+──────────────────*/
+
+@media only screen and (max-width: 1184px) and (min-width: 1024px) {
+  .hero-img{
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 917px) {
+
+  .hero-img {
+    width: 60vw;
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 917px) and (min-width: 767px) {
+    .hero-text{
+      padding-top: 40px;
+      height: 70vh;
+    }
+    .hero-img {
+      width: 70vw;
+      height: 60vh;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .hero-text{
+    padding-top: 40px;
+    width: 100%;
+  }
+  .hero-text h1{
+    font-size: 2rem;
+  }
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+  .hero-text h5{
+    font-size: 1.5rem;
+  }
+  .hero-text h3{
+    font-size: 1.5rem;
+  }
+  .hero-img{
+    width: 100%;
+    height: 40vh;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about img, .about a {
+    display: none;
+  }
+  .about-text{
+    width: 100%;
+    margin: 40px 10px;
+  }
+  .about-text h1{
+    font-size: 2rem;
+  }
+  .divider {
+    display: none;
+  }
+
+  .services {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-cards {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .services-cards div {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .services div h1 {
+    font-size: 1.5rem;
+  }
+
+  .services div p {
+    font-size: 1rem;
+  }
+
+  .contact{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .information {
+    width: 100%;
+    margin: 40px 10px;
+  }
+
+  .information img {
+    display: none;
+  }
+
+  .form {
+    width: 100%;
+    margin: 40px 10px;
+  }
+
+  .form h1 {
+    font-size: 2rem;
+  }
+
+  .form form {
+    width: 100%;
+  }
 }
 
 </style>

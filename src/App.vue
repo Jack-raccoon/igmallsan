@@ -1,18 +1,20 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import AOS from 'aos';
 
 const toggleMenu = () => {
   const nav = document.querySelector('.nav-bar')
   const menu = document.querySelector('.menu')
-  const bg = document.querySelector('.bg')
   nav.classList.toggle('nav-active')
   menu.classList.toggle('toggle')
-  bg.classList.toggle('bg-active')
 }
 
 window.onload = () => {
   const menu = document.querySelector('.menu')
   menu.addEventListener('click', toggleMenu)
+  AOS.init({
+    duration: 1200,
+  })
 }
 
 </script>
@@ -22,18 +24,17 @@ window.onload = () => {
     <img alt="IGMallsan logo" class="logo" src="@/assets/logo.jpg" width="180" height="85" />
       <nav>
         <ul class="nav-bar">
-          <div class="bg"></div>
           <li class="nav-link active"><RouterLink to="/">INICIO</RouterLink></li>
           <li class="nav-link"><RouterLink to="/about">EMPRESA</RouterLink></li>
           <li class="nav-link"><RouterLink to="/products">PRODUCTOS</RouterLink></li>
           <li class="nav-link"><RouterLink to="/services">SERVICIOS</RouterLink></li>
           <li class="nav-link"><RouterLink to="/contact">CONTACTO</RouterLink></li>
         </ul>
-        <div class="menu">
+        <button class="menu">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
-        </div>
+        </button>
       </nav>
   </header>
     <RouterView />
@@ -91,7 +92,7 @@ nav li {
 .wsp {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 100;
   width: 80px;
   height: 80px;
@@ -106,26 +107,6 @@ nav li {
 .wsp a {
   color: #fff;
   font-size: 2.5rem;
-}
-
-/*────────────────── 
-    scroll
-──────────────────*/
-
-::-webkit-Scrollbar {
-    width: 5px;
-    background: rgba(5, 5, 5, 1);
-}
-
-::-webkit-Scrollbar-thumb {
-    border-radius: 10px;
-    background: var(--main-decor-color);
-    box-shadow: inset 0 0 20px var(--main-decor-color);
-}
-
-::-webkit-Scrollbar-track {
-    margin-top: 80px;
-    border-radius: 10px;
 }
 
 /*────────────────── 
@@ -228,6 +209,8 @@ nav li {
     right: 1rem;
     cursor: pointer;
     z-index: 5;
+    border: none;
+    background-color: #fff;
   }
 
   .nav-bar {
@@ -248,6 +231,18 @@ nav li {
 
   .nav-bar li {
     opacity: 3;
+    animation: navLinkFade 0.5s ease-in-out forwards;
+  }
+
+  .nav-bar li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #0565e2;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: table;
   }
 
   main {

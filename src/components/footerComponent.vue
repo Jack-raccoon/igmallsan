@@ -58,7 +58,15 @@
     }
 
     @media screen and (max-width: 768px) {
-        .information {
+        footer {
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .footer__information {
             flex-direction: column;
             justify-content: center;
             align-items: center;
