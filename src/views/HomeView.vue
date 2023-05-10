@@ -25,7 +25,7 @@ import 'aos/dist/aos.css';
     </div>
     <div class="about">
       <div class="about-img animate__animated" data-aos="fade-down">
-        <img src="./../assets/about-img.jpg" alt="Bombas de agua">
+        <img src="./../assets/about-img.jpeg" alt="Bombas de agua">
         <a class="link" href="https://freepik.com/author/">Designed by macrovector / Freepik</a>
       </div>
       <div class="about-text" data-aos="fade-down">

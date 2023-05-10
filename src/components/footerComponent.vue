@@ -2,7 +2,7 @@
     <footer>
         <div class="footer__information">
             <div class="footer__logo">
-                <img src="./../assets/logo.jpg" alt="logo" />
+                <img src="./../assets/logo.jpeg" alt="logo" />
             </div>
             <div class="information__address">
                 <h3>Address</h3>

@@ -21,7 +21,7 @@ window.onload = () => {
 
 <template>
   <header>
-    <img alt="IGMallsan logo" class="logo" src="@/assets/logo.jpg" width="180" height="85" />
+    <img alt="IGMallsan logo" class="logo" src="@/assets/logo.jpeg" width="180" height="85" />
       <nav>
         <ul class="nav-bar">
           <li class="nav-link active"><RouterLink to="/">INICIO</RouterLink></li>
