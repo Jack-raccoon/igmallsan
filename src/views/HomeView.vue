@@ -68,19 +68,17 @@ import 'aos/dist/aos.css';
       </div>
       <div class="form" data-aos="fade-down">
         <h1>DÉJANOS TU CONSULTA</h1>
-        <form action="" class="animate__animated">
+        <form action="" class="animate__animated" netlify>
           <div class="top_form">
             <div class="name">
               <label for="name">NOMBRE:</label>
-              <input type="text" name="name-client" id="name-client">
+              <input type="text" name="name" id="name">
             </div>
             <div class="email">
               <label for="email">CORREO:</label>
               <input type="email" name="email" id="email">
             </div>
           </div>
-          <label for="phone">TELEFONO:</label>
-          <input type="number" name="phone" id="phone">
           <label for="message">CONSULTA:</label>
           <textarea name="message" id="message" cols="30" rows="10"></textarea>
           <button type="submit"> Enviar</button>
