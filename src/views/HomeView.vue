@@ -4,13 +4,10 @@ import divider from '../components/dividerComponent.vue';
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-
-
 </script>
 
 <template>
-  <div class="view home">
+  <div class="view home" id="home">
     <div class="hero">
       <div class="hero-text">
         <h5 class="animate__animated animate__fadeInDown">Asegura tu suministro de agua</h5>
@@ -23,7 +20,7 @@ import 'aos/dist/aos.css';
         <a class="link" href="http://www.freepik.com/author/stories">Designed by storyset / Freepik</a>
       </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
       <div class="about-img animate__animated" data-aos="fade-down">
         <img src="./../assets/about-img.jpeg" alt="Bombas de agua">
         <a class="link" href="https://freepik.com/author/">Designed by macrovector / Freepik</a>
@@ -40,7 +37,7 @@ import 'aos/dist/aos.css';
         <divider/>
       </div>
 
-    <div class="services">
+    <div class="services" id="service">
       <h2>Nuestros servicios</h2>
       <div class="services-cards">
         <div data-aos="fade-down" id="service-1">
@@ -58,20 +55,16 @@ import 'aos/dist/aos.css';
         </div>
         <div data-aos="fade-down" id="service-3">
           <h1>Reparación</h1>
-          <p>Descripción: Si tu bomba de agua presenta problemas, no dudes en contactarnos. En nuestro servicio de
+          <p>Si tu bomba de agua presenta problemas, no dudes en contactarnos. En nuestro servicio de
             reparación, contamos con técnicos especializados y herramientas de última generación para diagnosticar y
             solucionar cualquier falla que presente tu bomba de agua.</p>
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="information" data-aos="fade-down">
         <h1>CONTÁCTANOS</h1>
-        <ul>
-          <li>Correo: LuisMallccoSanchez@igmallsan.onmicrosoft.com</li>
-          <li>Celular: 990 460 089</li>
-        </ul>
-        <img src="../assets/call.jpeg" alt="bombas de agua peru">
+        <img src="../assets/contact.jpg" alt="bombas de agua peru">
       </div>
       <div class="form" data-aos="fade-down">
         <h1>DÉJANOS TU CONSULTA</h1>

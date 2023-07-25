@@ -21,14 +21,14 @@ window.onload = () => {
 
 <template>
   <header>
-    <img alt="IGMallsan logo" class="logo" src="@/assets/logo.jpeg" width="180" height="85" />
+    <RouterLink to="/"><img alt="IGMallsan logo" class="logo" src="@/assets/logo.jpeg" width="180" height="85" /></RouterLink>
       <nav>
         <ul class="nav-bar">
-          <li class="nav-link active"><RouterLink to="/">INICIO</RouterLink></li>
-          <li class="nav-link"><RouterLink to="/about">EMPRESA</RouterLink></li>
-          <li class="nav-link"><RouterLink to="/products">PRODUCTOS</RouterLink></li>
-          <li class="nav-link"><RouterLink to="/services">SERVICIOS</RouterLink></li>
-          <li class="nav-link"><RouterLink to="/contact">CONTACTO</RouterLink></li>
+          <li class="nav-link active"></li>
+          <li class="nav-link"><a href="#home">INICIO</a></li>
+          <li class="nav-link"><a href="#about">EMPRESA</a></li>
+          <li class="nav-link"><a href="#service">SERVICIOS</a></li>
+          <li class="nav-link"><a href="#contact">CONTACTO</a></li>
         </ul>
         <button class="menu">
           <div class="line1"></div>
